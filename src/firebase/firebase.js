@@ -2,12 +2,12 @@
 import { initializeApp } from "firebase/app";
 import {getFirestore,collection} from 'firebase/firestore'
 const firebaseConfig = {
-  apiKey: "AIzaSyBKQW7I_M4pHdT0EK-0_8KNLZ55m9cH9x0",
-  authDomain: "filmyverse-48c76.firebaseapp.com",
-  projectId: "filmyverse-48c76",
-  storageBucket: "filmyverse-48c76.appspot.com",
-  messagingSenderId: "118272285910",
-  appId: "1:118272285910:web:1b35f37f98423e53b33d77"
+  apiKey:process.env.REACT_APP_API_KEY ,
+  authDomain: process.env.REACT_APP_AUTHDOMAIN,
+  projectId: process.env.REACT_APP_PROJECTID,
+  storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSANGINGSENDERID,
+  appId: process.env.REACT_APP_APPID
 };
 
 // Initialize Firebase

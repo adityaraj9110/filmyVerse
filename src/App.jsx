@@ -31,7 +31,7 @@ function App() {
   const [userName,setUserName] = useState(getUserNameLocal);
   
   console.log("user login is: ",userName)
-
+  console.log(process.env.REACT_APP_API_KEY)
   return (
     <AppState.Provider value={{login,userName,setLogin,setUserName}}>
     <div className="App relative">
