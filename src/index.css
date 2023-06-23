@@ -1,13 +1,22 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-color: black;
+  color: white;
+}
+.card{
+  background-color: rgb(19,19,19);
+}
+.header{
+  background-color: #16161b;
+}
+.required_field::after{
+  content: "*";
+  color: red;
+  margin-left: 3px;
+}
+.logout{
+  margin-left: 70rem;
 }
